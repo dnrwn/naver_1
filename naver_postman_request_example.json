@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "001e91ba-149c-478e-ab70-2ab2ddf23b9b",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12283384"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Naver-Client-Id",
+						"value": "uv_lv7I3jpwBqWkHVDOx",
+						"type": "text"
+					},
+					{
+						"key": "X-Naver-Client-Secret",
+						"value": "2FttqJ6b99",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"startDate\" : \"2023-10-04\",\r\n    \"endDate\" : \"2023-10-04\",\r\n    \"timeUnit\" : \"date\",\r\n    \"keywordGroups\" : [{\r\n        \"groupName\" : \"aaa\",\r\n        \"keywords\" : [\"aaa\", \"bbb\"]\r\n    }],\r\n    \"device\" : \"mo\", // optional\r\n    \"gender\" : \"f\", // optional\r\n    \"ages\" : [\"1\", \"2\"] // optional\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://openapi.naver.com/v1/datalab/search",
+					"protocol": "https",
+					"host": [
+						"openapi",
+						"naver",
+						"com"
+					],
+					"path": [
+						"v1",
+						"datalab",
+						"search"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
